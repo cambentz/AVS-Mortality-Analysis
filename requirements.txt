@@ -16,4 +16,8 @@ datetime
 plotly>=5.0  
 
 # Notebooks
-jupyterlab  
+jupyterlab 
+
+# Data download
+kaggle
+gitpython
