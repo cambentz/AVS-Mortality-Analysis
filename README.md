@@ -36,7 +36,7 @@ The project draws data from:
 - [Aniket0712 COVID with Diabetes and Hypertension Dataset (Kaggle)](https://www.kaggle.com/datasets/aniket0712/covid-with-diabetes-and-hypertension-death-counts)  
 - [Johns Hopkins University COVID-19 Data Repository (GitHub)](https://github.com/CSSEGISandData/COVID-19)  
 
-These are stored locally in the `data/raw2/` directory once downloaded.
+These are stored locally in the `data/raw/` directory once downloaded.
 
 ---
 
