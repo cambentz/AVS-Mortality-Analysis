@@ -11,9 +11,7 @@ __pycache__/
 .RData
 .Rproj.user/
 
-# Data and outputs
-processed-data/
-*.csv
+# Outputs
 *.log
 
 # EXCEPT: keep specific files
@@ -25,7 +23,3 @@ processed-data/
 # OS
 .DS_Store
 Thumbs.db
-
-# Data
-data/raw/*
-tmp/

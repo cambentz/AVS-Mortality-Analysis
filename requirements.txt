@@ -17,7 +17,3 @@ plotly>=5.0
 
 # Notebooks
 jupyterlab 
-
-# Data download
-kaggle
-gitpython
