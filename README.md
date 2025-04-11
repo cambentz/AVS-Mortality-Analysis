@@ -1,4 +1,4 @@
-# AVS Mortality Analysis Project – CSC487 Group Project
+# AVS Mortality Analysis Project – CSC487/587 Group Project
 
 ## Contributors
 
