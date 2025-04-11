@@ -1,4 +1,4 @@
-# Covid Mortality Risk Factors – CSC487 Group Project
+# AVS Mortality Analysis Project – CSC487 Group Project
 
 ## Contributors
 
