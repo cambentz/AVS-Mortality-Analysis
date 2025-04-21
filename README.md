@@ -5,7 +5,13 @@
 - [@Khadi Badiane](https://github.com/khadib12)
 - [@Cameron Bentz](https://github.com/cambentz)  
 - [@Joey Henry](https://github.com/josephhenry123)  
-- [@Luke Lynch](https://github.com/lukelynch10)  
+- [@Luke Lynch](https://github.com/lukelynch10)
+
+---
+## Presentation Links
+
+- [Youtube](https://www.youtube.com/watch?v=2WNjedIw9dM)
+- [Slides](https://docs.google.com/presentation/d/1C92DHxN_8cpJTgVjuDkSvElXzDcIDp5Wf0Jl7xew7xc/edit#slide=id.p)
 
 ---
 
