@@ -5,6 +5,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.metrics import roc_curve, auc
+
 filePath = "../data/processed/DataSheet_2_cleaned.csv"
 data = pd.read_csv(filePath)
 
@@ -24,11 +26,43 @@ y_prediction = model.predict(x_test)
 y_probabilty = model.predict_proba(x_test)[:, 1]
 
 # show highest impact 
-feuture_importance = pd.Series(model.feature_importances_, index = x.columns)
+feature_importance = pd.Series(model.feature_importances_, index = x.columns)
 plt.figure(figsize=(15,10))
-sns.barplot(x = feuture_importance, y=feuture_importance.index)
+sns.barplot(x = feature_importance, y=feature_importance.index)
 plt.title("Random Forest")
 plt.xlabel("Importance")
 plt.ylabel("Feature")
 plt.savefig('../outputs/figures/predictive/RF_histogram.png')
+#plt.show()
+
+# Evaluate model
+print("Confusion Matrix:\n", confusion_matrix(y_test, y_prediction))
+print("\nClassification Report:\n", classification_report(y_test, y_prediction))
+print("\nROC AUC Score:", roc_auc_score(y_test, y_probabilty))
+
+# ROC curve and AUC
+fpr, tpr, thresholds = roc_curve(y_test, y_probabilty)
+roc_auc = auc(fpr, tpr)
+
+# Plot ROC curve
+plt.figure(figsize=(8, 6))
+plt.plot(
+    fpr,
+    tpr, 
+    label=f"Logistic Regression (AUC = {roc_auc:.2f})", 
+    color='navy'
+    )
+plt.plot(
+    [0, 1], 
+    [0, 1], 
+    linestyle='--', 
+    color='gray'
+    )
+plt.title("ROC Curve - APA vs BHA Prediction")
+plt.xlabel("False Positive Rate")
+plt.ylabel("True Positive Rate")
+plt.legend(loc="lower right")
+plt.grid(True)
+plt.tight_layout()
+plt.savefig('../outputs/figures/predictive/RF_ROC.png')
 plt.show()

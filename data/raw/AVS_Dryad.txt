@@ -6,7 +6,7 @@ Patients	Diagnosis	Therapy	Age (y)	Gender	"SBP
 (pg/ml)"	ARR	"K
 (mEq/L)"	"Urinay 
 aldosterone
- (ƒÊg/day)"	"ARR after 50 mg 
+(ï¿½ï¿½g/day)"	"ARR after 50 mg 
 captopril loading"	"PRA after furosemide 
 standing test"	"PAC after saline 
 load test"	PAC reduction rate after saline infusion test (%)	LI before ACTH stimulation	LI after ACTH stimulation	CSI before ACTH stimulation	CSI after ACTH stimulation	PAC on APA side before ACTH stimulation	PAC on contralateral side before ACTH stimulation	PAC on APA side after ACTH  stimulation	PAC on contralateral side after ACTH stimulation	KCNJ5	ATP1A1	ATP2B3	CACNA1D	Antihypertensive agents at diagnosis	Antihypertensive agents after treatment	"SBP ater surgery
