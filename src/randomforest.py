@@ -9,7 +9,7 @@ filePath = "../data/processed/DataSheet_2_cleaned.csv"
 data = pd.read_csv(filePath)
 
 # make upa and dpa 1 or 0
-data['Diagnosis(PA)'] = LabelEncoder.fit_transform(['Diagnosis(PA)'])
+data['Diagnosis(PA)'] = LabelEncoder().fit_transform(data['Diagnosis(PA)'])
 
 # create data training
 x = data.drop(columns=['Diagnosis(PA)'])
